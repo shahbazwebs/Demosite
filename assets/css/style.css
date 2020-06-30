@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html,
+body {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    color: #3E4852;
+    font-family: "Roboto", sans-serif;
+}
+
+.section_wrap {
+    margin: 30px 0;
+}
+
+.nav.nav-pills li a {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    display: inline-block;
+    color: #000000;
+    width: 100%;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav.nav-pills li a p {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav.nav-pills li a img {
+    max-width: 100%;
+    max-width: 25px;
+}
+
+.nav.nav-pills li a.active {
+    background-color: #c2c2c2;
+    color: #000000;
+}
+
+.tab-content .list_of_fabric {
+    margin: 0 0 15px 0;
+}
+
+.tab-content .list_of_fabric img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.list_of_collars {
+    border: solid 1px #CCC;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_of_collars:hover {
+    background: #f1f1f1;
+}
+
+.list_of_pockets {
+    width: 100%;
+    min-height: 100px;
+    border: solid #f1f1f1 1px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_of_pockets:hover {
+    background: #f1f1f1;
+}
+
+.main_shirt_sections {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    /* background: red; */
+    position: relative;
+}
+
+.main_front_sections {
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.sleeves_full_section {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    right: auto;
+}
+
+.cuff_one_section {
+    position: absolute;
+    left: 0;
+    right: auto;
+    width: 400px;
+}
+
+.placket_straight {
+    position: absolute;
+    left: 0;
+    width: 400px;
+}
+
+.collar_polo_section {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    right: auto;
+}
+
+.collar_band_section {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    right: auto;
+}

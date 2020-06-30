@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+$RobotoFonts: 'Roboto',
+sans-serif;
+$themeColor: #5eb8e4;
+$WhiteColor: #FFFFFF;
+$BlackColor: #000000;
+$HeadingColor: #223260;
+$FontColor: #3E4852;
+$ButtonHoverColor: #3b9dce;
+$smallShadow: 0 0.125rem 0.25rem rgba(0,
+0,
+0,
+0.075);
+$regularShadow: 0 0.5rem 1rem rgba(0,
+0,
+0,
+0.15);
+$largerShadow: 0 1rem 3rem rgba(0,
+0,
+0,
+0.175);
+$transitionEffects: all 0.5s ease;
+@mixin subHeading {
+    font-size: 22px;
+    color: $HeadingColor;
+    line-height: 28px;
+    margin-bottom: 25px;
+    @media(max-width: 767px) {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+@mixin backgroundButtons {
+    background-color: $themeColor;
+    color: $WhiteColor;
+    padding: 8px 34px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: $transitionEffects;
+    border: none;
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    &:hover {
+        transition: $transitionEffects;
+        background: $ButtonHoverColor;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    color: $FontColor;
+    font-family: $RobotoFonts;
+}
+
+header {
+    box-shadow: $smallShadow;
+    background: $WhiteColor;
+    nav {
+        .navbar-brand {
+            img {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+.dropdown-menu:li {
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
